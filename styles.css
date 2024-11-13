@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff6f61, #d4a5a5);
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+.product-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+    width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #f4f4f4;
+}
+.product-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #f4f4f4;
+    transition: transform 0.3s ease;
+}
+.product-card img:hover {
+    transform: scale(1.1);
+}
+.product-info {
+    padding: 25px;
+    text-align: center;
+}
+.product-info h2 {
+    font-size: 26px;
+    color: #333;
+    margin: 20px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.product-info p.category {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 15px;
+}
+.product-info .price {
+    font-size: 28px;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.product-info .description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.btn-buy {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-buy:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+.btn-buy:active {
+    background-color: #7f1d1d;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
